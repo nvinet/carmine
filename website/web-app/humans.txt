@@ -1,0 +1,19 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Head of Development: Nicolas Vinet
+  Senior Developer: Dan Parker
+  Site: www.carmine.co.uk
+  Twitter: 
+  Location: London, UK
+
+/* THANKS */
+  Names: Google ... what was the world before it?
+
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Boilerplate, Modernizr, jQuery
+  Software: Grails, Apache Active MQ, MySql

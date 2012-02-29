@@ -1,0 +1,1 @@
+<p class="footnote"><g:message code="about.works.footnote" args="[vh.getHandlingCost()]"/></p>

@@ -1,0 +1,1 @@
+<r:img data-memberid="${id}" class="memberThumb" id="${id}-thumb" uri= "${g.resource(dir:'images/team', file:id+'-thumb.jpg')}"/>

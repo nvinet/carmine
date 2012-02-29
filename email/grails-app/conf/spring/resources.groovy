@@ -1,0 +1,5 @@
+
+beans = {
+
+    postageAppMailProxyService(email.PostageAppMailProxyMockService)
+}

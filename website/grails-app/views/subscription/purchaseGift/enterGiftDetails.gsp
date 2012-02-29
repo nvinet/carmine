@@ -1,0 +1,1 @@
+<g:render template="/subscription/purchaseGift/purchaseGiftBase" model="[currentStep:3, subscriptionPlan:subscriptionPlan, giftDetails:giftDetails]"/>

@@ -1,0 +1,120 @@
+/* Color variables */
+@color-dark: #343434;
+@color-white: #fff;
+
+@color-light-red: #ee9ea9;
+@color-medium-red: #e35d70;
+@color-red: #be122b;
+@color-dark-red: #91071b;
+
+@color-medium-pink: #e35b88;
+@color-pink: #e29acc;
+
+@color-dark-grey: #555;
+@color-grey: #999;
+@color-medium-grey: #ccc;
+@color-light-grey: #e9e9e9;
+
+@color-light-gold:#DFAD54;
+@color-gold:#CEA452;
+
+@color-light-green:#aad45c;
+@color-medium-green:#7bc030;
+@color-dark-green:#558521;
+
+/* Page Structure */
+@base-column-width: 60px;
+@base-column-gutter: 20px;
+@base-column-margin: @base-column-gutter / 2;
+@base-space: 20px;
+
+.margin(){
+    margin: 0 @base-column-margin @base-space @base-column-margin;
+}
+
+
+/* Functions */
+
+.radius(@radius:0){
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.shadow(@size:8px, @color:Black){
+	-moz-box-shadow:0px 0px @size @color;
+    -webkit-box-shadow:0px 0px @size @color;
+    box-shadow:0px 0px @size @color;
+}
+
+.tab(@radius:0, @color: Black){
+    -moz-border-radius-topleft: @radius;
+    -moz-border-radius-topright: @radius;
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-radius: @radius @radius 0px 0px;
+    border-radius: @radius @radius 0px 0px;
+    background: @color;
+    padding: 8px 18px;
+}
+
+.radius-top(@radius:0, @color: Black){
+    -moz-border-radius-topleft: @radius;
+    -moz-border-radius-topright: @radius;
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-radius: @radius @radius 0px 0px;
+    border-radius: @radius @radius 0px 0px;
+    background: @color;
+}
+
+.radius-bottom(@radius:0, @color: Black){
+    -moz-border-radius-bottomleft: @radius;
+    -moz-border-radius-bottomright: @radius;
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-radius: 0px 0px @radius @radius 0px 0px;
+    border-radius: 0px 0px @radius @radius;
+}
+
+.gradient-horizontal (@left-color:#fff, @right-color: #fff){
+    background: @left-color;
+    background: -moz-linear-gradient(left, @left-color, @right-color);
+    background: -webkit-gradient(linear, left top, right top, from(@left-color), to(@right-color));
+    background: -webkit-linear-gradient(left, @left-color,@right-color);
+    background: -o-linear-gradient(left, @left-color,@right-color);
+    background: -ms-linear-gradient(left, @left-color,@right-color);
+    background: linear-gradient(left, @left-color,@right-color);
+}
+
+.gradient-vertical(@top-color:#fff, @bottom-color: #fff){
+    background: @bottom-color;
+    background-image: -moz-linear-gradient(top, @top-color, @bottom-color);
+    background-image: -webkit-gradient(linear, center top, center bottom, from(@top-color), to(@bottom-color));
+    background-image: -webkit-linear-gradient(top, @top-color, @bottom-color);
+    background-image: -o-linear-gradient(top, @top-color, @bottom-color);
+    background-image: -ms-linear-gradient(top, @top-color, @bottom-color);
+    background-image: linear-gradient(top, @top-color, @bottom-color);
+
+}
+
+.page-center() {
+    margin: 0 auto;
+}
+
+.size(@width:0, @height: 0){
+    width: @width;
+    height: @height;
+}
+
+.absolute-position(@top:0, @left: 0, @index: 0){
+    top: @top;
+    left: @left;
+    position: absolute;
+    z-index: @index;
+}
+
+.reset() {
+    margin: 0;
+    padding: 0;
+}

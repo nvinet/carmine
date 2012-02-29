@@ -1,0 +1,76 @@
+@import 'var.less';
+
+body {
+    &.facebookBody{
+    	.container{
+    		width:715px !important;
+    	}
+    }
+    a {
+        color: @color-red;
+		text-decoration:none;
+		font-weight:bold;
+        &:visited {
+            color: @color-red;
+        }
+        &:hover {
+            color: @color-red;
+			text-decoration:underline;
+        }
+    }
+
+    p {
+        line-height:18px;
+		font-size:16px;
+    }
+
+    ul {
+        margin: 0 20px;
+
+        li {
+            list-style: url("../images/icons/bullet.png");
+            padding-bottom: 10px;
+            color: @color-dark;
+        }
+        &.noBullet {
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style:none;
+                list-style-image:none;
+            }
+        }
+    }
+
+    table {
+        width:100%;
+        th {
+            background: @color-light-grey;
+            padding:10px 20px;
+			font-size:16px;
+			font-weight:normal;
+			color:@color-dark-grey;
+        }
+
+        td {
+            border-bottom:1px solid @color-light-grey;
+            color:@color-dark-grey;
+            padding:10px 20px;
+            font-size:16px;
+        }
+    }
+
+    form {
+        input[type=text], input[type=password]{
+            width:150px;
+        }
+
+        input, textarea {
+            border: 1px solid @color-medium-grey;
+            background: @color-light-grey;
+            font-size:13px;
+            padding: 3px 2px
+        }
+    }
+}

@@ -1,0 +1,1 @@
+<script src="<vh:getConfigItem name="facebook.apiUrl"/>"></script>
